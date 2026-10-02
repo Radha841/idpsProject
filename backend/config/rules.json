@@ -1,0 +1,50 @@
+{
+  "rules": [
+    {
+      "id": "R001", "name": "SSH brute force", "type": "threshold", "enabled": true,
+      "event_type": "failed_login", "group_by": "ip",
+      "count": 5, "window_seconds": 60, "cooldown_seconds": 300,
+      "severity": "High", "action": "block_ip"
+    },
+    {
+      "id": "R002", "name": "Privilege escalation", "type": "privilege", "enabled": true,
+      "event_type": ["sudo_command", "su_attempt"],
+      "admin_users": ["root", "admin"], "cooldown_seconds": 300,
+      "severity": "High", "action": "none"
+    },
+    {
+      "id": "R003", "name": "Unusual login time", "type": "off_hours", "enabled": true,
+      "event_type": "successful_login", "start_hour": 9, "end_hour": 21,
+      "cooldown_seconds": 600, "severity": "Medium", "action": "none"
+    },
+    {
+      "id": "R004", "name": "SQL injection", "type": "pattern", "enabled": true,
+      "event_type": "web_request", "field": "request", "cooldown_seconds": 60,
+      "patterns": ["'\\s*or\\s*'?1'?\\s*=\\s*'?1", "union\\s+(all\\s+)?select", "(--|#)\\s*$", ";\\s*drop\\s+table"],
+      "severity": "High", "action": "block_ip"
+    },
+    {
+      "id": "R005", "name": "Cross-site scripting (XSS)", "type": "pattern", "enabled": true,
+      "event_type": "web_request", "field": "request", "cooldown_seconds": 60,
+      "patterns": ["<\\s*script", "onerror\\s*=", "javascript:"],
+      "severity": "Medium", "action": "none"
+    },
+    {
+      "id": "R006", "name": "Directory traversal", "type": "pattern", "enabled": true,
+      "event_type": "web_request", "field": "request", "cooldown_seconds": 60,
+      "patterns": ["\\.\\./", "etc/passwd", "boot\\.ini"],
+      "severity": "High", "action": "block_ip"
+    },
+    {
+      "id": "R007", "name": "Request flood / DoS", "type": "threshold", "enabled": true,
+      "event_type": "web_request", "group_by": "ip",
+      "count": 100, "window_seconds": 10, "cooldown_seconds": 120,
+      "severity": "Medium", "action": "block_ip"
+    },
+    {
+      "id": "R008", "name": "Login after brute force", "type": "sequence", "enabled": true,
+      "event_type": "successful_login", "after_rule": "R001", "within_seconds": 600,
+      "cooldown_seconds": 600, "severity": "Critical", "action": "block_ip"
+    }
+  ]
+}
