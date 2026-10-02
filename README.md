@@ -25,6 +25,7 @@ incident timeline.
 | R006 | Directory traversal | `../` or `etc/passwd` in the request | High |
 | R007 | Request flood / DoS | 100 or more requests from one IP within 10 seconds | Medium |
 | R008 | Login after brute force | Successful login from an IP that just triggered R001 | Critical |
+| R009 | Honeytoken endpoint touched | Any request to the decoy endpoint (`/api/admin-secret-backup`) | Critical |
 
 Each alert carries a recommended `action` (for example `block_ip`) used by the response module.
 
