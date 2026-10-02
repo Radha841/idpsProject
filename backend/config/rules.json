@@ -45,6 +45,12 @@
       "id": "R008", "name": "Login after brute force", "type": "sequence", "enabled": true,
       "event_type": "successful_login", "after_rule": "R001", "within_seconds": 600,
       "cooldown_seconds": 600, "severity": "Critical", "action": "block_ip"
+    },
+    {
+  "id": "R009", "name": "Honeytoken endpoint touched", "type": "pattern", "enabled": true,
+  "event_type": "web_request", "field": "request", "cooldown_seconds": 10,
+  "patterns": ["/api/admin-secret-backup"],
+  "severity": "Critical", "action": "block_ip"
     }
   ]
 }
