@@ -1,0 +1,39 @@
+2026-10-17T09:00:00Z campus-gateway sshd[6100]: Accepted publickey for meera from 10.20.1.31 port 45000 ssh2
+2026-10-17T09:10:00Z campus-gateway sshd[6101]: Accepted publickey for kabir from 10.20.1.32 port 45001 ssh2
+2026-10-17T09:20:00Z campus-gateway sshd[6102]: Accepted publickey for sana from 10.20.1.33 port 45002 ssh2
+2026-10-18T09:00:00Z campus-gateway sshd[6100]: Accepted publickey for meera from 10.20.1.31 port 45000 ssh2
+2026-10-18T09:10:00Z campus-gateway sshd[6101]: Accepted publickey for kabir from 10.20.1.32 port 45001 ssh2
+2026-10-18T09:20:00Z campus-gateway sshd[6102]: Accepted publickey for sana from 10.20.1.33 port 45002 ssh2
+2026-10-19T09:00:00Z campus-gateway sshd[6100]: Accepted publickey for meera from 10.20.1.31 port 45000 ssh2
+2026-10-19T09:10:00Z campus-gateway sshd[6101]: Accepted publickey for kabir from 10.20.1.32 port 45001 ssh2
+2026-10-19T09:20:00Z campus-gateway sshd[6102]: Accepted publickey for sana from 10.20.1.33 port 45002 ssh2
+2026-10-20T09:00:00Z campus-gateway sshd[6100]: Accepted publickey for meera from 10.20.1.31 port 45000 ssh2
+2026-10-20T09:10:00Z campus-gateway sshd[6101]: Accepted publickey for kabir from 10.20.1.32 port 45001 ssh2
+2026-10-20T09:20:00Z campus-gateway sshd[6102]: Accepted publickey for sana from 10.20.1.33 port 45002 ssh2
+2026-10-21T09:00:00Z campus-gateway sshd[6100]: Accepted publickey for meera from 10.20.1.31 port 45000 ssh2
+2026-10-21T09:10:00Z campus-gateway sshd[6101]: Accepted publickey for kabir from 10.20.1.32 port 45001 ssh2
+2026-10-21T09:20:00Z campus-gateway sshd[6102]: Accepted publickey for sana from 10.20.1.33 port 45002 ssh2
+2026-10-22T08:52:00Z campus-gateway sshd[6200]: Failed password for meera from 10.20.1.31 port 45110 ssh2
+2026-10-22T08:53:00Z campus-gateway sshd[6201]: Accepted password for meera from 10.20.1.31 port 45111 ssh2
+2026-10-22T09:20:00Z campus-gateway sshd[6300]: Failed password for invalid user opsadmin from 198.51.100.172 port 47000 ssh2
+2026-10-22T09:20:07Z campus-gateway sshd[6301]: Failed password for invalid user opsadmin from 198.51.100.172 port 47001 ssh2
+2026-10-22T09:20:14Z campus-gateway sshd[6302]: Failed password for invalid user opsadmin from 198.51.100.172 port 47002 ssh2
+2026-10-22T09:20:21Z campus-gateway sshd[6303]: Failed password for invalid user opsadmin from 198.51.100.172 port 47003 ssh2
+2026-10-22T09:20:28Z campus-gateway sshd[6304]: Failed password for invalid user opsadmin from 198.51.100.172 port 47004 ssh2
+2026-10-22T09:20:35Z campus-gateway sshd[6305]: Failed password for invalid user opsadmin from 198.51.100.172 port 47005 ssh2
+2026-10-22T09:20:42Z campus-gateway sshd[6306]: Failed password for invalid user opsadmin from 198.51.100.172 port 47006 ssh2
+2026-10-22T09:20:49Z campus-gateway sshd[6307]: Failed password for invalid user opsadmin from 198.51.100.172 port 47007 ssh2
+2026-10-22T09:20:56Z campus-gateway sshd[6308]: Failed password for invalid user opsadmin from 198.51.100.172 port 47008 ssh2
+2026-10-22T09:21:03Z campus-gateway sshd[6309]: Failed password for invalid user opsadmin from 198.51.100.172 port 47009 ssh2
+2026-10-22T09:21:10Z campus-gateway sshd[6310]: Failed password for invalid user opsadmin from 198.51.100.172 port 47010 ssh2
+2026-10-22T09:21:17Z campus-gateway sshd[6311]: Failed password for invalid user opsadmin from 198.51.100.172 port 47011 ssh2
+2026-10-22T09:21:30Z campus-gateway sshd[6320]: Accepted password for opsadmin from 198.51.100.172 port 47020 ssh2
+2026-10-22T09:28:00Z campus-gateway sshd[6400]: Failed password for opsadmin from 203.0.113.164 port 48000 ssh2
+2026-10-22T09:28:06Z campus-gateway sshd[6401]: Failed password for opsadmin from 203.0.113.164 port 48001 ssh2
+2026-10-22T09:28:12Z campus-gateway sshd[6402]: Failed password for opsadmin from 203.0.113.164 port 48002 ssh2
+2026-10-22T09:28:18Z campus-gateway sshd[6403]: Failed password for opsadmin from 203.0.113.164 port 48003 ssh2
+2026-10-22T09:28:24Z campus-gateway sshd[6404]: Failed password for opsadmin from 203.0.113.164 port 48004 ssh2
+2026-10-22T09:28:30Z campus-gateway sshd[6405]: Failed password for opsadmin from 203.0.113.164 port 48005 ssh2
+2026-10-22T09:28:36Z campus-gateway sshd[6406]: Failed password for opsadmin from 203.0.113.164 port 48006 ssh2
+2026-10-22T09:28:42Z campus-gateway sshd[6407]: Failed password for opsadmin from 203.0.113.164 port 48007 ssh2
+2026-10-22T09:29:00Z campus-gateway sshd[6420]: Accepted password for opsadmin from 203.0.113.164 port 48020 ssh2
